@@ -10,7 +10,8 @@ body {
   background-color: #1f2937;
   position: sticky; /*sticky header*/
   top: 0; /*sticky header*/
-  border-bottom: 1px solid white;
+
+  height: 8vh;
 }
 
 .left {
@@ -51,8 +52,17 @@ ul {
   background-color: #1f2937;
   color: white;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 60px;
+  height: 92vh;
+}
+
+.greeting {
+  flex: 1 0 100%;
+  justify-content: center;
+  text-align: center;
+  font-weight: normal;
+  font-size: 100px;
 }
 
 .first-card {
@@ -118,7 +128,6 @@ ul {
 
 .second-card-header {
   flex: 1 0 100%;
-  flex-direction: column;
   justify-content: center;
   text-align: center;
   font-weight: normal;
