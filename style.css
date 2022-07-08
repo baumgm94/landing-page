@@ -8,6 +8,9 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #1f2937;
+  position: sticky; /*sticky header*/
+  top: 0; /*sticky header*/
+  border-bottom: 1px solid white;
 }
 
 .left {
@@ -38,6 +41,7 @@ ul {
 .logo > img {
   width: 30%;
   height: 30%;
+  padding-bottom: 5px;
 }
 
 /* FIRST SECTION*/
@@ -48,20 +52,74 @@ ul {
   color: white;
   justify-content: center;
   text-align: center;
+  padding: 60px;
 }
 
 .first-card {
   align-items: center;
   margin: 20px;
   gap: 50px;
-  width: 600px;
+  width: 500px;
 }
 
-/* 
-.profile-picture {
+/* SECOND SECTION */
+
+.third-container {
+  display: flex;
+  background-color: #e5e7eb;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding-top: 40px;
+}
+
+.third-card {
+  /* border: 1px solid #1f2937; */
+  border-radius: 4px;
+  margin: 16px;
+  width: 400px;
+}
+.third-container-picture {
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   object-fit: fill;
-  width: 80%;
-  height: 80%;
-  border-radius: 5%;
-  margin-top: 20px;
-} */
+  width: 100%;
+  height: 100%;
+}
+
+.third-card-header {
+  font-weight: normal;
+}
+/*THIRD SECTION*/
+.second-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px;
+  flex-wrap: wrap;
+}
+.second-card {
+  /*border: 2px solid #3882f6;*/
+  border-radius: 4px;
+  margin: 40px;
+  width: 200px;
+  text-align: center;
+}
+
+.bicycle,
+.notebook,
+.mountain,
+.coffee {
+  object-fit: fill;
+  height: 70%;
+  width: 70%;
+  border-radius: 4px;
+}
+
+.second-card-header {
+  flex: 1 0 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: normal;
+}
