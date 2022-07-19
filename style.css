@@ -15,7 +15,6 @@ body {
 }
 
 .left {
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0px 0px 20px;
@@ -85,8 +84,9 @@ ul {
 
 .third-card {
   /* border: 1px solid #1f2937; */
+  align-items: center;
   border-radius: 4px;
-  margin: 16px;
+
   width: 400px;
 }
 .third-container-picture {
@@ -131,4 +131,10 @@ ul {
   justify-content: center;
   text-align: center;
   font-weight: normal;
+}
+
+@media screen and (max-width: 575px) {
+  .third-container {
+    flex-direction: column;
+  }
 }
